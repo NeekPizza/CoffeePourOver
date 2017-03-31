@@ -1,0 +1,25 @@
+<h2 class='page-header'>Log a new coffee bean into your journal:</h2>
+<form (submit)="newBean()">
+  <div class="form-group">
+    <label class='whiteText'>Name of Bean:</label>
+    <input type="text" class="form-control"[(ngModel)]="name" name="name">
+  </div>
+  <div class="form-group">
+    <label class='whiteText'>Profile:</label>
+    <input type="text" class="form-control"[(ngModel)]="profile" name="profile">
+  </div>
+  <div class="form-group">
+    <label class='whiteText'>Origin:</label>
+    <input type="text" class="form-control"[(ngModel)]="origin" name="origin">
+  </div>
+  <div class="form-group">
+    <label class='whiteText'>Roast:</label>
+    <input type="text" class="form-control"[(ngModel)]="roast" name="roast">
+  </div>
+  <div class="form-group">
+    <label class='whiteText'>Comments:</label>
+    <textarea rows='5' type="text" class="form-control"[(ngModel)]="comments" name="comments"></textarea>
+  </div>
+  <input type="submit" class="btn btn-primary" value="Log new bean">
+</form>
+<br>

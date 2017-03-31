@@ -1,0 +1,5 @@
+<div *ngIf='bean'>
+  <h2 class="whiteText">Are you sure you want to delete journal entry for <strong>{{ bean.name }} ?</strong></h2>
+  <button type='button' class='btn btn-danger'[routerLink]="['/journal']">No</button>
+  <button type='button' class='btn btn-success' (click)='deleteBean()'>Yes</button>
+</div>

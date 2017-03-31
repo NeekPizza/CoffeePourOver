@@ -1,0 +1,40 @@
+{
+  "name": "CoffeePourOver",
+  "version": "1.0.0",
+  "engines": {
+    "node": "6.9.1",
+    "npm": "3.10.8"
+  },
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Nick Piazza",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.1",
+    "express": "^4.15.2",
+    "jsonwebtoken": "^7.3.0",
+    "mongoose": "^4.9.0",
+    "morgan": "^1.8.1",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.2.1",
+    "@angular/cli": "^1.0.0"
+
+  },
+  "devDependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeekPizza/coffeejournal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NeekPizza/coffeejournal/issues"
+  },
+  "homepage": "https://github.com/NeekPizza/coffeejournal#readme",
+  "description": ""
+}

@@ -1,0 +1,13 @@
+<h2 class='page-header'>Here are your journal entries</h2>
+<div *ngIf="user">
+  <ul class='list-group' *ngFor="let beans of user.beans; let i = index">
+    <li class='list-group-item'><strong>Name: </strong>{{ user.beans[i].name }} </li>
+    <li class='list-group-item'><strong>Profile: </strong>{{ user.beans[i].profile }}</li>
+    <li class='list-group-item'><strong>Origin: </strong>{{ user.beans[i].origin }}</li>
+    <li class='list-group-item'><strong>Roast: </strong>{{ user.beans[i].roast }}</li>
+    <li class='list-group-item'><strong>Comments: </strong>{{ user.beans[i].comments }}</li>
+    <li class='list-group-item'><strong>Created On: </strong>{{ user.beans[i].date | date:'dd/MM/yyyy' }}</li>
+    <button type='button' class='btn btn-primary'[routerLink]="['/edit',user.beans[i]._id]">Edit</button>
+    <button type='button' class='btn btn-danger' [routerLink]="['/delete',user.beans[i]._id]">Delete</button>
+  </ul>
+</div>

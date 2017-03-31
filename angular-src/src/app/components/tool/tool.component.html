@@ -1,0 +1,24 @@
+<h2 class='page-header whiteText'>Welcome to the pour over tool. Here you will find a ratio calculator, and below it a stopwatch.</h2>
+<p class='whiteText'>To operate the ratio calculator, be sure to fill in the ratio field as (x):1, and either the
+water or the coffee field. You will get a message on top telling you how much water or coffee to use.</p>
+<br>
+<form>
+  <div class="form-group">
+    <label class='whiteText'>Ratio :1</label>
+    <input type="number" class="form-control"[(ngModel)]="ratio" name="ratio" placeholder="Enter ratio :1 here">
+  </div>
+  <div class="form-group whiteText">
+    <label class='whiteText'>Water in grams: </label>
+    <input type="number" class="form-control"[(ngModel)]="water" name="water" placeholder="Enter water in grams">
+  </div>
+  <div class="form-group">
+    <label class='whiteText'>Coffee in grams: </label>
+    <input type="number" class="form-control"[(ngModel)]="coffee" name="coffee" placeholder="Enter coffee in grams">
+  </div>
+<button class="btn btn-success" (click)="calculate()">Calculate</button>
+</form>
+<br>
+<h3 class='whiteText'>{{ minutes }} minutes : {{ seconds }} seconds</h3>
+<button class="btn btn-success" (click)="start()">Start</button>
+<button class="btn btn-danger" (click)="stop()">Stop</button>
+<button class="btn btn-default" (click)="reset()">reset</button>
